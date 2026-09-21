@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>我的笔记</title>
+  <meta charset="UTF-8">
+  <title>我的笔记站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
 </head>
 <body>
-    <h1>欢迎来到我的笔记站</h1>
-    <p>这是我搭建的第一个页面。</p>
-    <hr>
-    <ul>
-        <li><a href="#">第一篇笔记（待添加）</a></li>
-        <li><a href="#">第二篇笔记（待添加）</a></li>
-    </ul>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '我的笔记站',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 </body>
 </html>
